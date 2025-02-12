@@ -53,3 +53,16 @@ button {
 button:hover {
     background: #003d80;
 }
+
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+}
