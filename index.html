@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISC - Projet MOSAIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DISC - Projet MOSAIC</h1>
+        <p>Digital portfolio to justify acquired competencies in the MOSAIC project.</p>
+    </header>
+    
+    <main>
+        <section id="competencies">
+            <h2>Competencies</h2>
+            
+            <div class="competency">
+                <h3 onclick="toggleCategory('design')">Concevoir et Dimensionner</h3>
+                <div id="design" class="criteria">
+                    <button onclick="showDetails('c1')">Using Simulation and CAD</button>
+                    <button onclick="showDetails('c2')">Implementing a phase mask in Zemax</button>
+                    <button onclick="showDetails('c3')">Mechanical support design in SolidWorks</button>
+                    <button onclick="showDetails('c4')">Answering a technical problem</button>
+                </div>
+            </div>
+            
+            <div class="competency">
+                <h3 onclick="toggleCategory('teamwork')">Travailler en Équipe</h3>
+                <div id="teamwork" class="criteria">
+                    <button onclick="showDetails('t1')">Working in a diverse team</button>
+                    <button onclick="showDetails('t2')">Collaborating in large teams</button>
+                    <button onclick="showDetails('t3')">Communication and project organization</button>
+                    <button onclick="showDetails('t4')">Adapting to different working environments</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="details">
+            <h2>Details</h2>
+            <div id="details-content">
+                <p>Select a criterion to see the justification and proofs.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
